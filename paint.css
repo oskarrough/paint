@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: system-ui, segoe ui, sans-serif;
+  background: #ccc;
+}
+
+#toolbox {
+  width: 12em;
+}
+
+#artboard {
+  background: #fff;
+  position: absolute;
+  left: 12em;
+  top: 0;
+  cursor: crosshair;
+}
+
+#colorSelector {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#colorSelector > div {
+  width: 3em;
+  height: 3em;
+}
+
+#brushSelector {
+  width: 100%;
+}
+
+#brushDisplay {
+  min-height: 70px;
+  position: relative;
+}
+
+#brushDisplay div {
+  border: 1px solid #000;
+  background: #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
